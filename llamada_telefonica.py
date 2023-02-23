@@ -1,9 +1,21 @@
-minutos = int(input("digite la duracion de la llamada: "))
+#programa para saber el valor de la llamada
 
-if minutos ==3:
-    costo_llamada = 300
+print("---------------------------------------------")
+print("-----el resultado de las operaciones son-----")
+print("---------------------------------------------")
 
-else:
-    costo_llamada = 300 + 50*(minutos - 3)
+#input
 
-print("el costo de la llamada es: " + costo_llamada)        
+minutos = int(input("ingrese los minutos de la llamada: "))
+
+#processing
+
+if minutos < 3:
+    costo = 300
+
+if minutos > 3:
+    costo = 300 + (minutos - 3) * 50
+
+#output
+
+print("el costo de la llamada es: " ,costo)
